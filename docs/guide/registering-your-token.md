@@ -10,25 +10,25 @@ You can greatly improve the security and experience of users adding your token t
 
 Here are a couple live web applications that let you enter your token details, and then share them with a simple web link:
 
-- [Watch Token](https://vittominacori.github.io/watch-token/create/)
-- [Add Token App](https://metamask.github.io/Add-Token/#edit)
+- [Watch Token](https://vittominacori.github.io/watch-token/Home Chain Token/)
+- [Add Token App](https://metamask.github.io/Add-Token/#HCT)
 
 ## Example
 
 If you'd like to integrate suggesting a token into your own web app, you can follow this code snippet to implement it:
 
 ```javascript
-const tokenAddress = '0xd00981105e61274c8a5cd5a88fe7e037d935b513';
-const tokenSymbol = 'TUT';
+const tokenAddress = '0x888fCAEb4fEea0256236C92FeAB68D3A5Bdbb0E2';
+const tokenSymbol = 'HCT';
 const tokenDecimals = 18;
-const tokenImage = 'http://placekitten.com/200/300';
+const tokenImage = 'http://(https://ibb.co/0DYFsLz)
 
 try {
   // wasAdded is a boolean. Like any RPC method, an error may be thrown.
   const wasAdded = await ethereum.request({
     method: 'wallet_watchAsset',
     params: {
-      type: 'ERC20', // Initially only supports ERC20, but eventually more!
+      type: 'bep20', // Initially only supports ERC20, but eventually more!
       options: {
         address: tokenAddress, // The address that the token is at.
         symbol: tokenSymbol, // A ticker symbol or shorthand, up to 5 chars.
